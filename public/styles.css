@@ -1,0 +1,308 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: white;
+  /* height: 100vh; Full viewport height */
+  font-family: Poppins, sans-serif;
+  color: black;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+.introduction {
+  /* background-color: rgb(59 7 100); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically within `.introduction` */
+  align-items: center; /* Center content horizontally */
+  height: 620px; /* Fixed height */
+  width: 100%; /* Or any other value like 400px, depending on design */
+  text-align: center;
+  margin-bottom: 10px;
+
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav-link:hover {
+  background-color: #8a2be2; /* Change background color */
+  text-decoration: underline; /* Add underline */
+  color: white; /* Keep text white */
+  transition: background-color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+  border-radius: 2px;
+}
+
+.btn {
+  background-color: #052570;
+}
+
+/* About */
+
+/* section {
+  background-color: rgb(15 23 42);
+} */
+
+section {
+  background-color: rgb(248 250 252);
+}
+/* section > h1 {
+  color: darkblue;
+} */
+
+.about h1 {
+  font-weight: bold;
+  color: darkblue;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.sub a {
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.sub a:hover {
+  opacity: 0.9;
+}
+
+.img-fluid {
+  border: 3px solid white;
+  box-shadow: 200px solid #050577; /* Optional gradient or solid border */
+}
+
+/* Skills */
+
+.skills {
+  background-color: rgb(245 245 244);
+  height: 500px;
+  padding-top: 50px;
+}
+
+.skills > h1 {
+  font-weight: bold;
+  color: darkblue;
+}
+
+.skillImage {
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 10px solid #54035a;
+}
+
+.skill-container .item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.skill-container .item:hover {
+  transform: scale(1.1); /* Image scaling on hover */
+}
+
+.skill-container .skill-image {
+  transition: all 0.3s ease;
+}
+
+.skill-container .hover-card {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.skill-container .item:hover .hover-card {
+  opacity: 1;
+}
+
+.skill-container .hover-card h6 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.skill-container .progress {
+  width: 80%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.skill-container .progress-bar {
+  height: 100%;
+  background-color: #4caf50; /* Green progress bar */
+  text-align: center;
+  color: white;
+  font-size: 0.7rem;
+  line-height: 8px;
+}
+
+.item {
+  padding: 10px;
+}
+
+/* Project */
+
+.project {
+  background-color: #f9f9f9; /* Light background for better readability */
+  padding: 35px 0;
+}
+
+.project h1 {
+  font-weight: bold;
+  color: darkblue;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  transform: translateX(100%); /* Initially off-screen to the right */
+  opacity: 0; /* Hidden initially */
+  transition: transform 0.6s ease, opacity 0.6s ease; /* Smooth animation */
+}
+
+.card.animate {
+  transform: translateX(0); /* Slide to original position */
+  opacity: 1; /* Make visible */
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(72, 8, 211, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none; /* Clean card borders */
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom-in effect */
+  box-shadow: 0 8px 16px rgba(0.2, 0.2, 0.2, 0.2); /* Stronger shadow on hover */
+}
+
+.card-img-top {
+  object-fit: cover; /* Ensures images maintain their aspect ratio */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #007bff; /* Standout title color */
+}
+
+.card-text {
+  color: #555; /* Slightly muted text color */
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card > .btn {
+  font-weight: bold;
+  background-color: darkblue; /* Green button color */
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+.card > .btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.row-cols-md-4 .col {
+  margin-bottom: 20px; /* Add spacing between rows */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .project h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .card {
+    transform: translateX(50%); /* Adjust animation for smaller screens */
+  }
+
+  .card-img-top {
+    height: 150px; /* Reduce image height for smaller screens */
+  }
+
+  .card-title {
+    font-size: 1.25rem; /* Adjust title size */
+  }
+
+  .card-text {
+    font-size: 0.85rem; /* Adjust text size */
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 120px; /* Further reduce image height for mobile */
+  }
+
+  .card-title {
+    font-size: 1.1rem; /* Adjust title size */
+  }
+
+  .card-text {
+    font-size: 0.8rem; /* Adjust text size */
+  }
+}
+
+/* Contact */
+
+#contact {
+  background-color: rgb(199 210 254);
+}
+
+.message {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(2 132 199), 0 6px 20px 0 rgba(2 132 199);
+  text-align: center;
+}
+
+.container > h1 {
+  color: darkblue;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.address .icon {
+  display: inline-block;
+}
