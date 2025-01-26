@@ -1,5 +1,5 @@
 import React from "react";
-import pr1 from "../public/images/portfolio_photo2.jpg";
+// import pr1 from "../public/images/portfolio_photo2.jpg";
 
 function About() {
   return (
@@ -36,7 +36,7 @@ function About() {
           {/* Image */}
           <div className="col-md-6 text-center">
             <img
-              src={pr1}
+              src={`${process.env.PUBLIC_URL}/images/portfolio_photo2.jpg`}
               alt="Ramesh"
               className="img-fluid rounded-circle shadow-lg"
               style={{ height: "300px", width: "300px", float: "right" }}

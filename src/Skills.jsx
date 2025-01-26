@@ -1,33 +1,77 @@
 import React, { useState } from "react";
-import C from "../public/images/C.png";
-import Cpp from "../public/images/Cpp.png";
-import Python from "../public/images/Python.png";
-import program from "../public/images/programming.png";
-import Html from "../public/images/HTML5.png";
-import CSS from "../public/images/CSS3.png";
-import JS from "../public/images/JavaScript.png";
-import reactjs from "../public/images/React.png";
-import Nodejs from "../public/images/nodejs.png";
-import ExpressJS from "../public/images/Express.png";
-import Postgres from "../public/images/PostgresSQL.png";
-import Postman from "../public/images/Postman.png";
-import Github from "../public/images/GitHub.png";
-import Vscode from "../public/images/VSCode.png";
+// import C from "../public/images/C.png";
+// import Cpp from "../public/images/Cpp.png";
+// import Python from "../public/images/Python.png";
+// import program from "../public/images/programming.png";
+// import Html from "../public/images/HTML5.png";
+// import CSS from "../public/images/CSS3.png";
+// import JS from "../public/images/JavaScript.png";
+// import reactjs from "../public/images/React.png";
+// import Nodejs from "../public/images/nodejs.png";
+// import ExpressJS from "../public/images/Express.png";
+// import Postgres from "../public/images/PostgresSQL.png";
+// import Postman from "../public/images/Postman.png";
+// import Github from "../public/images/GitHub.png";
+// import Vscode from "../public/images/VSCode.png";
 
 function Skills() {
   const skills = [
-    { src: C, alt: "C", progress: 90 },
-    { src: Cpp, alt: "C++", progress: 95 },
-    { src: Python, alt: "Python", progress: 70 },
-    { src: program, alt: "Programming", progress: 90 },
-    { src: Html, alt: "HTML", progress: 95 },
-    { src: CSS, alt: "CSS", progress: 90 },
-    { src: JS, alt: "JavaScript", progress: 95 },
-    { src: reactjs, alt: "React.js", progress: 90 },
-    { src: Nodejs, alt: "Node.js", progress: 85 },
-    { src: ExpressJS, alt: "Express.js", progress: 80 },
-    { src: Postgres, alt: "PostgresSQL", progress: 90 },
-    { src: Postman, alt: "Postman", progress: 80 },
+    { src: `${process.env.PUBLIC_URL}/images/C.png`, alt: "C", progress: 90 },
+    {
+      src: `${process.env.PUBLIC_URL}/images/Cpp.png`,
+      alt: "C++",
+      progress: 95,
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/Python.png`,
+      alt: "Python",
+      progress: 70,
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/programming.png`,
+      alt: "Programming",
+      progress: 90,
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/HTML5.png`,
+      alt: "HTML",
+      progress: 95,
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/CSS3.png`,
+      alt: "CSS",
+      progress: 90,
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/JavaScript.png`,
+      alt: "JavaScript",
+      progress: 95,
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/React.png`,
+      alt: "React.js",
+      progress: 90,
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/nodejs.png`,
+      alt: "Node.js",
+      progress: 85,
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/Express.png`,
+      alt: "Express.js",
+      progress: 80,
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/PostgresSQL.png`,
+      alt: "PostgresSQL",
+      progress: 90,
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/images/Postman.png`,
+      alt: "Postman",
+      progress: 80,
+    },
   ];
 
   const [hoveredSkill, setHoveredSkill] = useState(null);
@@ -78,7 +122,7 @@ function Skills() {
             <div className="item col-2 text-center">
               <img
                 className="icon"
-                src={Github}
+                src={`${process.env.PUBLIC_URL}/images/GitHub.png`}
                 width="64px"
                 height="64px"
                 alt="some error"
@@ -87,7 +131,7 @@ function Skills() {
             <div className="item col-2 text-center">
               <img
                 className="icon"
-                src={Vscode}
+                src={`${process.env.PUBLIC_URL}/images/VSCode.png`}
                 width="64px"
                 height="64px"
                 alt="some error"
