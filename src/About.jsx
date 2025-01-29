@@ -17,17 +17,25 @@ function About() {
               to impactful projects.
             </p>
             <div className="sub mt-4">
-              <a href="#resume" className="btn btn-primary me-3" role="button">
+              <a
+                href="https://drive.google.com/file/d/15weK2_XcYYkdTiQjybkPXCwpilX4m6ei/view?usp=sharing"
+                className="btn btn-primary me-3"
+                role="button"
+              >
                 Resume
               </a>
               <a
-                href="#linkedin"
+                href="https://www.linkedin.com/in/ramesh-bheemanapally-056a59256/"
                 className="btn btn-secondary me-3"
                 role="button"
               >
                 LinkedIn
               </a>
-              <a href="#Github" className="btn btn-dark" role="button">
+              <a
+                href="https://github.com/ramesh8850"
+                className="btn btn-dark"
+                role="button"
+              >
                 GitHub
               </a>
             </div>

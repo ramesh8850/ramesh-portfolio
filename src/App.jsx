@@ -21,10 +21,10 @@ export default function App() {
         <div className="dev mt-2">
           <h2>Junior Sofware Developer</h2>
         </div>
-        <div className="d-grid gap-2 col-2 mx-auto">
-          <button className="btn btn-primary" type="button">
+        <div id="contact-section" className="d-grid gap-2 col-2 mx-auto">
+          <a href="#contact" className="btn btn-primary">
             Get in Touch
-          </button>
+          </a>
         </div>
       </div>
 
