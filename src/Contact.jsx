@@ -39,32 +39,33 @@ function Contact() {
         <div className="row row-cols-1 row-cols-md-2 g-5">
           {/* Contact Information */}
           <div className="address col-md-6 ">
-            <div className="loc w-100">
+            <div className="loc">
+              <h3 className="mb-2 py-2 fw-semibold">My Details</h3>
               <div className="mb-2 d-flex align-items-center">
                 <PersonIcon
                   className="icon me-2"
-                  style={{ fontSize: "1.5rem" }}
+                  style={{ fontSize: "2rem", marginBottom: "2px" }}
                 />
                 {"Ramesh Bheemanapally"}
               </div>
               <div className="mb-2 d-flex align-items-center">
                 <PhoneIcon
                   className="icon me-2"
-                  style={{ fontSize: "1.5rem" }}
+                  style={{ fontSize: "2rem", marginBottom: "2px" }}
                 />
                 {"+91-7569414038"}
               </div>
               <div className="mb-2 d-flex align-items-center">
                 <EmailIcon
                   className="icon me-2"
-                  style={{ fontSize: "1.5rem" }}
+                  style={{ fontSize: "2rem", marginBottom: "2px" }}
                 />
                 {"rameshgoud8850@gmail.com"}
               </div>
               <div className="d-flex align-items-center">
                 <HomeIcon
                   className="icon me-2"
-                  style={{ fontSize: "1.5rem" }}
+                  style={{ fontSize: "2rem", marginBottom: "2px" }}
                 />
                 {"Hyderabad, Telangana, India"}
               </div>
